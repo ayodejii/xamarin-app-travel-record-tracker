@@ -9,6 +9,6 @@
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<application android:label="TravulRecd.Android" android:icon="@mipmap/launcher_foreground">
-		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyD1EFcdla4zkuVHqlWUgNUbM68PTm7RVUQ" />
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="googleapikey" />
 	</application>
 </manifest>
