@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodel="clr-namespace:TravulRecd.ViewModel"
+             x:Class="TravulRecd.HistoryPage">
+    <ContentPage.BindingContext>
+        <viewmodel:HistoryViewModel />
+    </ContentPage.BindingContext>
+    <ListView x:Name="postListView"
+              ItemsSource="{Binding Posts}"
+              Refreshing="postListView_Refreshing"
+              IsPullToRefreshEnabled="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Venue}">
+                    <TextCell.ContextActions>
+                        <MenuItem  Clicked="MenuItem_Clicked"
+                                   CommandParameter="{Binding}"
+                                   IsDestructive="True"
+                                   Text="Delete"/>
+                    </TextCell.ContextActions>
+                </TextCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

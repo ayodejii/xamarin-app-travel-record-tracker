@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TravulRecd" xmlns:viewmodel="clr-namespace:TravulRecd.ViewModel"
+             x:Class="TravulRecd.LoginPage"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.BindingContext>
+        <viewmodel:LoginViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Fill"
+                 CompressedLayout.IsHeadless="True"
+                 Margin="20"> <!--keft, top, right, down-->
+        <Image x:Name="iconImg"
+               Aspect="AspectFit"
+               HorizontalOptions="FillAndExpand"
+               HeightRequest="150"
+               Margin="0, 0, 0, 50"/>
+
+        <Entry Text="{Binding Username, Mode=TwoWay}" Placeholder="Username"
+               x:Name="txtUsername"
+               Keyboard="Email"/> <!--used to switch keyboard to one with @ sgn-->
+
+        <Entry Text="{Binding Password, Mode=TwoWay}" Placeholder="Password"
+               IsPassword="True"
+               x:Name="txtPwrd"/>
+        
+        <Button Text="Log In" 
+                x:Name="btnLogin"
+                Command="{Binding loginCommand}"
+                CommandParameter="{Binding User}"
+                Margin="0, 20, 0, 0"
+                Style="{StaticResource logBtn}"/> <!--style alreadyse for it in the appxml-->
+        <Button Text="Register"
+               x:Name="goToRegister"
+               Command="{Binding navigateToRegister}"
+                HorizontalOptions="End"/>
+    </StackLayout>
+
+</ContentPage>

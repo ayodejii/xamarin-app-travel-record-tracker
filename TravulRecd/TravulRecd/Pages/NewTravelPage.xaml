@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodel="clr-namespace:TravulRecd.ViewModel"
+             x:Class="TravulRecd.NewTravelPage"
+             >
+    <ContentPage.BindingContext>
+        <viewmodel:NewTravelViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="saveBtn" Text="Save" Icon="save.png"
+                     Command="{Binding InsertPostCommand}"
+                     CommandParameter="{Binding Post}"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout x:Name="containerStack" BindingContext="{Binding Post}">
+        <Entry x:Name="txtExp" Placeholder="Write your experience"
+               Text="{Binding Experience, Mode=TwoWay}"/>
+        <ListView x:Name="venueListView" HorizontalOptions="FillAndExpand"
+                  Margin="20, 0" SelectedItem="{Binding PostVenue, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Label Text="{Binding name}" FontAttributes="Bold"/>
+                            
+                            <Label Text="{Binding location.address}" 
+                                   Grid.Row="1" 
+                                   TextColor="DodgerBlue"/>
+                            
+                            <Label Text="{Binding location.distance}"
+                                   Grid.Column="1"
+                                   />
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

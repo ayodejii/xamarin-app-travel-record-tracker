@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "fR7q3o9ve1U7iPW3NZbvD1sdMxG6BaX+1bH7oZazBSyu2N9VlegZuMK/mPOeTH1MLJIAJJHdPNMldFEni/DiIw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Isaac\\source\\repos\\TravulRecd\\TravulRecd\\TravulRecd.iOS\\TravulRecd.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Isaac\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\microsoft.bcl\\1.1.10\\microsoft.bcl.1.1.10.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\microsoft.net.http\\2.2.29\\microsoft.net.http.2.2.29.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\plugin.permissions\\2.1.0\\plugin.permissions.2.1.0.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\xam.plugin.geolocator\\4.1.3\\xam.plugin.geolocator.4.1.3.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\xamarin.essentials\\1.0.1\\xamarin.essentials.1.0.1.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\xamarin.forms\\4.7.0.1239\\xamarin.forms.4.7.0.1239.nupkg.sha512",
+    "C:\\Users\\Isaac\\.nuget\\packages\\xamarin.forms.maps\\4.7.0.1239\\xamarin.forms.maps.4.7.0.1239.nupkg.sha512"
+  ],
+  "logs": []
+}

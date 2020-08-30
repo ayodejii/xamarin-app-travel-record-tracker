@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodel="clr-namespace:TravulRecd.ViewModel"
+             x:Class="TravulRecd.Pages.RegisterPage">
+    <ContentPage.BindingContext>
+        <viewmodel:RegisterViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout x:Name="containerStackLayout" VerticalOptions="Center"
+                 Margin="20">
+
+        <Entry Text="{Binding Username, Mode=TwoWay}" Placeholder="Username"
+               x:Name="txtUsername"
+               Keyboard="Email"/>
+        <!--used to switch keyboard to one with @ sgn-->
+
+        <Entry Text="{Binding Password, Mode=TwoWay}" Placeholder="Password"
+               IsPassword="True"
+               x:Name="txtPwrd"/>
+        
+        <Entry Text="{Binding cPassword, Mode=TwoWay}" Placeholder="Confirm Password"
+               IsPassword="True"
+               x:Name="ctxtPwrd"/>
+
+        <Button Text="Register" 
+                x:Name="btnRegister"
+                Command="{Binding RegisterCommand}"
+                CommandParameter="{Binding User}"
+                Margin="0, 20, 0, 0"
+                Style="{StaticResource logBtn}"/>
+        <!--style alreadyse for it in the appxml-->
+    </StackLayout>
+</ContentPage>
